@@ -88,7 +88,7 @@ User-agent: PerplexityBot
 Allow: /
 ```
 
-> **Warning**
+> **Warning:**
 > Be careful not to allow these bots into your `/admin` or `/user` routes. Use `Disallow` directives for sensitive paths just as you would for standard SEO.
 
 ### Cloudflare WAF exceptions for AI crawlers
@@ -131,7 +131,7 @@ Then click **Or** and repeat for each bot:
 **The verification:**
 After deploying, check your Firewall Events in Cloudflare Analytics. If you see `GPTBot` requests with a `SKIP` action, your rule is working. If you see `BLOCK` or `CHALLENGE`, you still have a misconfiguration.
 
-> **Warning**  
+> **Warning:**
 > Do NOT disable Bot Fight Mode entirely. This would expose you to actual malicious scrapers. Use targeted Skip rules only for verified AI user agents.
 
 ### Atomic URLs strategy
@@ -369,10 +369,12 @@ If you cannot beat the algorithm with your website, use Reddit as a proxy.
 **Why it works:**
 Perplexity and Gemini often cite a Reddit thread as a primary source for questions like "Best tools for X". If your comment is the top-voted answer in that thread, the AI treats your text as the "consensus" truth, effectively laundering your marketing message into a factual citation.
 
-### The authority piggyback (GitHub, Medium, arXiv)
-If your domain is new (DR < 30), AI crawlers might visit it infrequently. However, they crawl sites like GitHub, Medium, and LinkedIn daily because these are weighted heavily in their training sets as "high-quality nodes."
+### The authority piggyback (GitHub, Medium, research repositories)
+If your domain is new (DR < 30), AI crawlers might visit it infrequently. However, they crawl sites like GitHub, Medium, LinkedIn and research repositories daily because these are weighted heavily in their training sets as "high-quality nodes."
 
-You can exploit this by ensuring your entity exists on these trusted nodes.
+If your tool is defined clearly *there*, the model is more likely to accept that definition as fact when it encounters it on your own website later.
+
+So, exploit this by ensuring your entity exists on these trusted nodes.
 
 **The strategy:**
 1.  **The "Readme" SEO:** If you have a public repo (or even a dedicated documentation repo), treat your `README.md` as a landing page. Use the same keywords and definitions there. LLMs (especially coding assistants like Copilot/Cursor) often learn about tools primarily from GitHub, not marketing sites.
@@ -413,9 +415,6 @@ LLMs are trained heavily on academic repositories. If your tool is documented in
 }
 </script>
 ```
-
-**Why it works:**
-When an AI model builds its knowledge graph, it trusts GitHub and research repositories implicitly. If your tool is defined clearly *there*, the model is more likely to accept that definition as fact when it encounters it on your own website later.
 
 ### License strategy: why Creative Commons might be a growth loop
 We are currently in a legal war between publishers (NYT, Getty) and AI companies over copyright. As a result, AI models are desperate for "clean" data—content they are legally allowed to ingest without fear of a lawsuit.
