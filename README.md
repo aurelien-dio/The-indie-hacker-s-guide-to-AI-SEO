@@ -9,6 +9,15 @@ This guide focuses on two goals:
 1.  **Source:** Getting your content ingested into the LLM's knowledge base.
 2.  **Citation:** Getting your brand or product explicitly named in the AI's generated answer.
 
+## Table of Contents
+
+- [Quick start (TL;DR)](#quick-start-tldr)
+- [Phase 1: The technical stack (dev-first)](#phase-1-the-technical-stack-dev-first)
+- [Phase 2: Structured data engineering](#phase-2-structured-data-engineering)
+- [Phase 3: Content optimization (writing for machines)](#phase-3-content-optimization-writing-for-machines)
+- [Phase 4: Growth hacks & experiments](#phase-4-growth-hacks--experiments)
+- [Phase 5: Monitoring & debugging](#phase-5-monitoring--debugging)
+
 ## Quick start (TL;DR)
 
 If you only read one section, understand the core philosophy. AI-SEO is not about keyword stuffing, it is about reducing the computational effort required for a model to understand and trust your content.
