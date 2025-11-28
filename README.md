@@ -14,7 +14,7 @@ This guide focuses on two goals:
 - [Quick start (TL;DR)](#quick-start-tldr)
 - [Phase 1: The technical stack (dev-first)](#phase-1-the-technical-stack-dev-first)
 - [Phase 2: Structured data engineering](#phase-2-structured-data-engineering)
-- [Phase 3: Content optimization (writing for machines)](#phase-3-content-optimization-writing-for-machines)
+- [Phase 3: Content architecture for machines](#phase-3-content-architecture-for-machines)
 - [Phase 4: Growth hacks & experiments](#phase-4-growth-hacks--experiments)
 - [Phase 5: Monitoring & debugging](#phase-5-monitoring--debugging)
 
